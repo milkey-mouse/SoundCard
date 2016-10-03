@@ -1,0 +1,51 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="5dip"
+    android:layout_marginBottom="5dip"
+    card_view:cardCornerRadius="4dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dip">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/listening"
+                android:id="@+id/icon"
+                android:scaleType="fitCenter"
+                android:layout_width="40dip"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dip">
+            <TextView
+                android:text="Link"
+                android:textSize="16dip"
+                android:textStyle="bold"
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="https://meme.institute"
+                android:textSize="14dip"
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
