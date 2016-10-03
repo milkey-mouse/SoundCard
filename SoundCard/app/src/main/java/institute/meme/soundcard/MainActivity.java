@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         wl = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "FFTs for SoundCard");
         wl.setReferenceCounted(false);
 
-        //BackgroundListener bl = new BackgroundListener(44100, 8192);
+        BackgroundListener bl = new BackgroundListener();
     }
 
     @Override
